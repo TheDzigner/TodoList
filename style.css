@@ -1,0 +1,245 @@
+*, 
+
+::before, 
+
+::after
+
+{
+
+  margin :0;
+
+  padding :0;
+
+  box-sizing :border-box ;
+
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+body {
+
+    font-size: 15pt;
+
+    width: min(100%, 480px);
+
+    user-select: none ;
+
+    -ms-user-select: none;
+
+    -moz-user-select: none;
+
+    -webkit-user-select: none;
+
+    transition :all .2s ease-in-out ;
+
+}
+
+#app 
+
+{
+
+ width: 100%;
+
+ min-height :100vh;
+
+ margin :5px auto 0 ;
+
+ text-align :center ;
+
+}
+
+#app form 
+
+{
+
+ width :100%;
+
+ display :flex ;
+
+ justify-content :center ;
+
+ align-items :center ;
+
+ padding :10px 30px;
+
+}
+
+#app form input 
+
+{
+
+ flex-grow: 1;
+
+ height :45px;
+
+ padding :5px ;
+
+ display :inline-block ;
+
+ outline :none ;
+
+ border :1px solid #F1F1F1 ;
+
+ font-weight :700 ;
+
+}
+
+#app form button 
+
+{
+
+ display :inline-block ;
+
+ padding :12px ;
+
+ margin :0 10px 0;
+
+ outline :none ;
+
+ background-color:#7149C6;
+
+ border :1px solid #F1F1F1 ;
+
+ color :#FFFFFF ;
+
+ border-radius :10px ;
+
+}
+
+#app form button:active
+
+{
+
+ transform: scale(.9);
+
+}
+
+#app .todos-container
+
+{
+
+ width :100%;
+
+ max-height: 90vh;
+
+ margin :20px auto 0 ;
+
+ display :flex ;
+
+ flex-direction :column ;
+
+ justify-content :flex-start ;
+
+ align-items :center ;
+
+ overflow :scroll ;
+
+  padding-bottom :30px;
+
+}
+
+#app  .todos-container ul 
+
+{
+
+ width :100%; 
+
+ padding :10px ;
+
+}
+
+#app .todos-container ul li 
+
+{
+
+ width :inherit;
+
+ margin :5px auto 0 ;
+
+ padding :30px ;
+
+ display :flex ;
+
+ justify-content :space-between ;
+
+ align-items :center ;
+
+border-radius :10px ;
+
+ background-color :rgba(183,185,190,.1);
+
+}
+
+#app ul li p 
+
+{
+
+ width :min(80%,80%);
+
+ word-break: break-all ;
+
+ word-wrap: wrap ;
+
+ padding :10px ;
+
+ text-align :left ;
+
+ font-weight :100 ;
+
+}
+
+#app ul li p.done
+
+{
+
+ text-decoration: line-through;
+
+}
+
+#app ul li input[type="checkbox"]
+
+{
+
+ outline :none ;
+
+ appearance: none;
+
+ -moz-appearance: none ;
+
+ -webkit-appearance: none ;
+
+ width :20px;
+
+ height :20px ;
+
+ border-radius :5px ;
+
+ background :rgba(183,185,190,.3);
+
+}
+
+#app ul li input[type="checkbox"]:checked
+
+{
+
+ background: rgba(3,3,3,.3);
+
+}
+
+#app ul li button 
+
+{
+
+ outline :none ;
+
+ display :inline-block ;
+
+ background-color :transparent ;
+
+ color :#ccc ;
+
+ border :none ;
+
+ padding :5px ;
+
+}
